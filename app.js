@@ -16,6 +16,14 @@ const els = {
   count: document.getElementById("count"),
 };
 
+const CATEGORY_LABELS = {
+  Whisky: "ウイスキー",
+  Gin: "ジン",
+  Vodka: "ウォッカ",
+  Rum: "ラム",
+  Liqueur: "リキュール"
+};
+
 function normalize(s) {
   return (s ?? "").toString().trim().toLowerCase();
 }
@@ -49,19 +57,23 @@ function render() {
   const filtered = state.data.filter(matches);
   els.count.textContent = `${filtered.length} 件`;
 
-  els.grid.innerHTML = filtered.map(item => `
-    <article class="card">
-      <img src="${item.image}" alt="${item.name}" loading="lazy" />
-      <div class="pad">
-        <h2>${item.name}</h2>
-        <div class="meta">${item.category} / ${ (item.ingredients || []).join("・") }</div>
-        ${item.note ? `<div class="meta" style="margin-top:6px;">${item.note}</div>` : ""}
-        <div class="tags">
-          ${(item.tags || []).map(t => `<span class="tag">${t}</span>`).join("")}
+  els.grid.innerHTML = filtered.map(item => {
+    const catLabel = CATEGORY_LABELS[item.category] ?? item.category;
+
+    return `
+      <article class="card">
+        ${item.image ? `<img src="${item.image}" alt="${item.name}" loading="lazy" />` : ""}
+        <div class="pad">
+          <h2>${item.name}</h2>
+          <div class="meta">${catLabel} / ${(item.ingredients || []).join("・")}</div>
+          ${item.note ? `<div class="meta" style="margin-top:6px;">${item.note}</div>` : ""}
+          <div class="tags">
+            ${(item.tags || []).map(t => `<span class="tag">${t}</span>`).join("")}
+          </div>
         </div>
-      </div>
-    </article>
-  `).join("");
+      </article>
+    `;
+  }).join("");
 }
 
 function renderTags() {
@@ -86,7 +98,7 @@ function renderCategories() {
   state.allCategories.forEach(c => {
     const opt = document.createElement("option");
     opt.value = c;
-    opt.textContent = c;
+    opt.textContent = CATEGORY_LABELS[c]??c;
     els.category.appendChild(opt);
   });
 }
