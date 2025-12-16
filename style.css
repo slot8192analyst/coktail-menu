@@ -1,25 +1,76 @@
-:root { --border:#e5e7eb; --text:#111827; --muted:#6b7280; }
-* { box-sizing: border-box; }
-body { margin:0; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; color:var(--text); }
-.wrap { max-width: 1000px; margin: 0 auto; padding: 16px; }
-h1 { margin: 8px 0 16px; }
+:root{
+  --bg:#070707;
+  --panel:#0c0c0c;
+  --text:#f5f5f5;
+  --muted:#c9c9c9;
+  --line:#e0a21a;   /* オレンジ/金 */
+  --line2:#2a2a2a;  /* うすい境界 */
+}
 
-.controls { display:flex; gap:10px; flex-wrap: wrap; align-items:center; }
-.controls input, .controls select { padding:10px; border:1px solid var(--border); border-radius:10px; }
-.controls input { flex: 1; min-width: 240px; }
-.controls button { padding:10px 12px; border:1px solid var(--border); border-radius:10px; background:#fff; cursor:pointer; }
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
 
-.chips { display:flex; flex-wrap:wrap; gap:8px; margin-top:12px; }
-.chip { padding:6px 10px; border:1px solid var(--border); border-radius: 999px; background:#fff; cursor:pointer; font-size: 14px; }
-.chip.active { background:#111827; color:#fff; border-color:#111827; }
+body:before{
+  content:"";
+  position: fixed;
+  inset: 14px;
+  border: 1px solid var(--line);
+  pointer-events:none;
+  opacity: .85;
+}
 
-.count { color:var(--muted); margin: 12px 0; }
+.wrap{ max-width: 1000px; margin:0 auto; padding:16px; }
 
-.grid { display:grid; gap:12px; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
-.card { border:1px solid var(--border); border-radius:16px; overflow:hidden; background:#fff; }
-.card img { width:100%; height: 180px; object-fit: cover; display:block; background:#f3f4f6; }
-.card .pad { padding:12px; }
-.card h2 { font-size: 18px; margin:0 0 6px; }
-.meta { color:var(--muted); font-size: 13px; }
-.tags { margin-top:8px; display:flex; flex-wrap:wrap; gap:6px; }
-.tag { font-size: 12px; padding: 4px 8px; border:1px solid var(--border); border-radius: 999px; color: #374151; }
+h1{
+  margin: 8px 0 16px;
+  letter-spacing: .06em;
+}
+
+/* 入力UIも黒基調 */
+.controls input, .controls select{
+  background: var(--panel);
+  color: var(--text);
+  border: 1px solid var(--line2);
+}
+
+.controls button{
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--line);
+}
+
+/* タグチップ */
+.chip{
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--line2);
+}
+.chip.active{
+  background: var(--line);
+  color: #111;
+  border-color: var(--line);
+}
+
+/* カード */
+.card{
+  background: var(--panel);
+  border: 1px solid var(--line2);
+  border-radius: 16px;
+}
+.card h2{ color: var(--text); }
+.meta{ color: var(--muted); }
+
+.tag{
+  color: var(--text);
+  border: 1px solid var(--line2);
+}
+
+/* 画像枠（黒背景に馴染ませる） */
+.card img{
+  background: #000;
+  border-bottom: 1px solid var(--line2);
+}
