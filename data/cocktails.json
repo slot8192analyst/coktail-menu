@@ -9,12 +9,870 @@
     "image": "images/white.png"
   },
   {
-    "id": "negroni",
-    "name": "ネグローニ",
-    "category": "Gin",
-    "ingredients": ["ジン", "カンパリ", "スイートベルモット"],
-    "tags": ["ビター", "大人", "濃いめ", "香り"],
-    "note": "苦味と甘味のバランス。",
+    "id": "highball",
+    "name": "ハイボール",
+    "category": "Whisky",
+    "ingredients": ["ウイスキー", "ソーダ", "レモン（お好み）"],
+    "tags": ["さっぱり", "炭酸", "定番", "食中酒"],
+    "note": "ウイスキーをソーダで割った定番。レモンでキレが増す。",
     "image": "images/yellow.png"
+  },
+  {
+    "id": "ginger_highball",
+    "name": "ジンジャーハイボール",
+    "category": "Whisky",
+    "ingredients": ["ウイスキー", "ジンジャーエール", "レモン（お好み）"],
+    "tags": ["甘口", "スパイシー", "炭酸", "飲みやすい"],
+    "note": "ジンジャーの甘さと刺激で飲みやすい。辛口ジンジャーだと大人向け。",
+    "image": "images/yellow.png"
+  },
+  {
+    "id": "coke_high",
+    "name": "コークハイ",
+    "category": "Whisky",
+    "ingredients": ["ウイスキー", "コーラ", "ライム（お好み）"],
+    "tags": ["甘口", "炭酸", "定番", "飲みやすい"],
+    "note": "コーラの甘さで親しみやすい。ライムを搾ると後味が締まる。",
+    "image": "images/brown.png"
+  },
+  {
+    "id": "whisky_tonic",
+    "name": "ウイスキートニック",
+    "category": "Whisky",
+    "ingredients": ["ウイスキー", "トニックウォーター", "ライム（またはレモン）"],
+    "tags": ["さっぱり", "ほろ苦", "炭酸", "柑橘"],
+    "note": "トニックのほろ苦さが合う。柑橘を添えると爽快。",
+    "image": "images/ywllow.png"
+  },
+  {
+    "id": "blue_highball",
+    "name": "ブルーハイボール",
+    "category": "Whisky",
+    "ingredients": ["ウイスキー", "ブルーキュラソー", "ソーダ", "レモン（お好み）"],
+    "tags": ["見た目映え", "甘口", "炭酸", "爽やか"],
+    "note": "青い色味が印象的。甘さがあるのでソーダ多めだと飲みやすい。",
+    "image": "images/blue.png"
+  },
+
+  {
+    "id": "china_blue",
+    "name": "チャイナブルー",
+    "category": "Liqueur",
+    "ingredients": ["ブルーキュラソー", "グレープフルーツジュース", "トニックウォーター", "レモン（またはライム）"],
+    "tags": ["さっぱり", "柑橘", "炭酸", "見た目映え"],
+    "note": "青×グレープフルーツの定番ロング。トニックで爽快、後味はすっきり。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "dita_soda",
+    "name": "ディタソーダ",
+    "category": "Liqueur",
+    "ingredients": ["ディタ（ライチリキュール）", "ソーダ", "ライム（お好み）"],
+    "tags": ["さっぱり", "炭酸", "フルーティー", "飲みやすい"],
+    "note": "ライチの香りをソーダで軽く。ライムを搾るとキレが出る。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "lychee_tonic",
+    "name": "ライチトニック",
+    "category": "Liqueur",
+    "ingredients": ["ディタ（ライチリキュール）", "トニックウォーター", "ライム"],
+    "tags": ["さっぱり", "ほろ苦", "炭酸", "フルーティー"],
+    "note": "トニックのほろ苦さで甘さ控えめに。食事にも合わせやすい。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "lychee_coke",
+    "name": "ライチコーク",
+    "category": "Liqueur",
+    "ingredients": ["ディタ（ライチリキュール）", "コーラ", "レモン（お好み）"],
+    "tags": ["甘口", "炭酸", "飲みやすい", "フルーティー"],
+    "note": "ライチ×コーラの意外な相性。甘めでカジュアル。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "dita_moni",
+    "name": "ディタモーニ",
+    "category": "Liqueur",
+    "ingredients": ["ディタ（ライチリキュール）", "グレープフルーツジュース", "トニックウォーター"],
+    "tags": ["さっぱり", "柑橘", "炭酸", "飲みやすい"],
+    "note": "ライチの甘い香りをグレープフルーツで引き締め、トニックで爽快に。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "lychee_orange",
+    "name": "ライチオレンジ",
+    "category": "Liqueur",
+    "ingredients": ["ディタ（ライチリキュール）", "オレンジジュース"],
+    "tags": ["甘口", "フルーティー", "飲みやすい"],
+    "note": "間違いない甘口。デザート感覚で飲める。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "lychee_grapefruit",
+    "name": "ライチグレープフルーツ",
+    "category": "Liqueur",
+    "ingredients": ["ディタ（ライチリキュール）", "グレープフルーツジュース"],
+    "tags": ["さっぱり", "柑橘", "フルーティー", "飲みやすい"],
+    "note": "甘さと酸味のバランスが良い。すっきり系の定番割り。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "dita_asia",
+    "name": "ディタエイジア",
+    "category": "Liqueur",
+    "ingredients": ["ディタ（ライチリキュール）", "ウーロン茶", "レモン（お好み）"],
+    "tags": ["さっぱり", "お茶", "低甘", "食中酒"],
+    "note": "ライチの香りをウーロンで軽く。甘さ控えめで飲み飽きにくい。",
+    "image": "images/white.png"
+  },
+
+  {
+    "id": "amaretto_soda",
+    "name": "アマレットソーダ",
+    "category": "Liqueur",
+    "ingredients": ["アマレット", "ソーダ", "レモン（お好み）"],
+    "tags": ["さっぱり", "炭酸", "ナッツ香", "大人甘い"],
+    "note": "アーモンド香をソーダで軽く。レモンで後味が締まる。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "amaretto_ginger",
+    "name": "アマレットジンジャー",
+    "category": "Liqueur",
+    "ingredients": ["アマレット", "ジンジャーエール", "レモン（お好み）"],
+    "tags": ["甘口", "スパイシー", "炭酸", "飲みやすい"],
+    "note": "アマレットの甘い香りにジンジャーの刺激。カジュアルで作りやすい。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "bocchi_ball",
+    "name": "ボッチボール",
+    "category": "Liqueur",
+    "ingredients": ["アマレット", "オレンジジュース", "ソーダ"],
+    "tags": ["フルーティー", "炭酸", "甘口", "飲みやすい"],
+    "note": "アマレット×オレンジの定番ロング。ソーダで軽く爽快に。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "italian_screwdriver",
+    "name": "イタリアンスクリュードライバー",
+    "category": "Liqueur",
+    "ingredients": ["アマレット", "オレンジジュース"],
+    "tags": ["甘口", "フルーティー", "定番", "飲みやすい"],
+    "note": "ウォッカの代わりにアマレットで甘く香ばしく。デザート寄り。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "caribbean_almond",
+    "name": "カリビアンアーモンド",
+    "category": "Liqueur",
+    "ingredients": ["アマレット", "ラム", "パイナップルジュース", "オレンジジュース"],
+    "tags": ["トロピカル", "甘口", "フルーティー", "濃厚"],
+    "note": "南国ジュースにアーモンド香が合う。リゾート感のある甘口カクテル。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "amaretto_coke",
+    "name": "アマレットコーク",
+    "category": "Liqueur",
+    "ingredients": ["アマレット", "コーラ", "レモン（お好み）"],
+    "tags": ["甘口", "炭酸", "香ばしい", "飲みやすい"],
+    "note": "コーラのスパイス感とアマレットの香りが好相性。甘めで飲みやすい。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "disaronno_splash",
+    "name": "ディサローノスプラッシュ",
+    "category": "Liqueur",
+    "ingredients": ["ディサローノ（アマレット）", "レモン（またはライム）", "ソーダ"],
+    "tags": ["さっぱり", "炭酸", "柑橘", "大人甘い"],
+    "note": "柑橘とソーダで軽く仕上げる“スプラッシュ”。甘さ控えめに飲める。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "god_mother",
+    "name": "ゴッドマザー",
+    "category": "Liqueur",
+    "ingredients": ["ウォッカ", "アマレット"],
+    "tags": ["濃いめ", "甘口", "香ばしい", "食後向き"],
+    "note": "ウォッカのキレにアマレットの甘い香り。ロックでゆっくり。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "god_father",
+    "name": "ゴッドファーザー",
+    "category": "Liqueur",
+    "ingredients": ["ウイスキー", "アマレット"],
+    "tags": ["濃いめ", "甘口", "香ばしい", "大人向け"],
+    "note": "ウイスキーにアマレットの甘い余韻。シンプルで完成度が高い。",
+    "image": "images/white.png"
+  },
+
+  {
+    "id": "malibu_coke",
+    "name": "マリブコーク",
+    "category": "Rum",
+    "ingredients": ["マリブ（ココナッツラム）", "コーラ", "ライム（お好み）"],
+    "tags": ["甘口", "炭酸", "トロピカル", "飲みやすい"],
+    "note": "ココナッツの甘い香り×コーラ。ライムで後味が締まる。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "malibu_surf",
+    "name": "マリブサーフ",
+    "category": "Rum",
+    "ingredients": ["マリブ（ココナッツラム）", "パイナップルジュース", "クランベリージュース"],
+    "tags": ["トロピカル", "フルーティー", "甘口", "見た目映え"],
+    "note": "パインの南国感にクランベリーの酸味。甘いけど重すぎない。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "malibu_pine",
+    "name": "マリブパイン",
+    "category": "Rum",
+    "ingredients": ["マリブ（ココナッツラム）", "パイナップルジュース"],
+    "tags": ["トロピカル", "甘口", "濃厚", "飲みやすい"],
+    "note": "ココナッツ×パインの王道。デザート感のある南国テイスト。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "malibu_beach",
+    "name": "マリブビーチ",
+    "category": "Rum",
+    "ingredients": ["マリブ（ココナッツラム）", "オレンジジュース", "クランベリージュース"],
+    "tags": ["フルーティー", "甘酸っぱい", "トロピカル", "見た目映え"],
+    "note": "ビーチ系の定番。オレンジの甘さとクランベリーの酸味が良いバランス。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "malibu_ginger",
+    "name": "マリブジンジャー",
+    "category": "Rum",
+    "ingredients": ["マリブ（ココナッツラム）", "ジンジャーエール", "ライム（お好み）"],
+    "tags": ["甘口", "スパイシー", "炭酸", "飲みやすい"],
+    "note": "ココナッツの甘さをジンジャーの刺激で軽く。ライムで爽快。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "malibu_green_tea",
+    "name": "マリブグリーンティー",
+    "category": "Rum",
+    "ingredients": ["マリブ（ココナッツラム）", "緑茶"],
+    "tags": ["お茶", "甘さ控えめ", "意外性", "すっきり"],
+    "note": "ココナッツの香りを緑茶でさっぱり。甘さが苦手でも試しやすい。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "green_eyes",
+    "name": "グリーンアイズ",
+    "category": "Rum",
+    "ingredients": ["マリブ（ココナッツラム）", "メロンリキュール", "パイナップルジュース"],
+    "tags": ["トロピカル", "甘口", "見た目映え", "フルーティー"],
+    "note": "メロンの甘い香りにココナッツ＆パインで南国寄り。色もきれいで映える。",
+    "image": "images/white.png"
+  },
+
+  {
+    "id": "mistia_cola",
+    "name": "ミスティアコーラ",
+    "category": "Liqueur",
+    "ingredients": ["ミスティア（マスカットリキュール）", "コーラ", "レモン（お好み）"],
+    "tags": ["甘口", "炭酸", "フルーティー", "飲みやすい"],
+    "note": "マスカットの華やかさをコーラでカジュアルに。レモンで後味すっきり。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "misty_moni",
+    "name": "ミスティモーニ",
+    "category": "Liqueur",
+    "ingredients": ["ミスティア（マスカットリキュール）", "グレープフルーツジュース", "トニックウォーター"],
+    "tags": ["さっぱり", "柑橘", "炭酸", "フルーティー"],
+    "note": "ミスティア版スプモーニ。グレープフルーツの酸味とトニックの苦味で爽快。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "mistia_grapefruit",
+    "name": "ミスティアグレープフルーツ",
+    "category": "Liqueur",
+    "ingredients": ["ミスティア（マスカットリキュール）", "グレープフルーツジュース"],
+    "tags": ["さっぱり", "柑橘", "フルーティー", "飲みやすい"],
+    "note": "甘い香りを柑橘の酸味で引き締める定番割り。すっきり飲める。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "mistia_ginger",
+    "name": "ミスティアジンジャー",
+    "category": "Liqueur",
+    "ingredients": ["ミスティア（マスカットリキュール）", "ジンジャーエール", "ライム（またはレモン）"],
+    "tags": ["甘口", "スパイシー", "炭酸", "爽やか"],
+    "note": "マスカットの香りにジンジャーの刺激。柑橘を足すとキレが出る。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "mistia_calpis",
+    "name": "ミスティアカルピス",
+    "category": "Liqueur",
+    "ingredients": ["ミスティア（マスカットリキュール）", "カルピス", "ソーダ（お好み）"],
+    "tags": ["甘口", "まろやか", "デザート", "飲みやすい"],
+    "note": "カルピスの乳酸感でまろやか甘口。ソーダ割りにすると軽くなる。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "mistia_soda",
+    "name": "ミスティアソーダ",
+    "category": "Liqueur",
+    "ingredients": ["ミスティア（マスカットリキュール）", "ソーダ", "レモン（お好み）"],
+    "tags": ["さっぱり", "炭酸", "フルーティー", "軽い"],
+    "note": "香りを活かして軽く飲めるソーダ割り。レモンでさらに爽快。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "misty_blue",
+    "name": "ミスティブルー",
+    "category": "Liqueur",
+    "ingredients": ["ミスティア（マスカットリキュール）", "ブルーキュラソー", "ソーダ（またはトニック）", "レモン（お好み）"],
+    "tags": ["見た目映え", "甘口", "炭酸", "フルーティー"],
+    "note": "マスカットの華やかさに青い彩り。ソーダ多めだと飲みやすい。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "mistia_tonic",
+    "name": "ミスティアトニック",
+    "category": "Liqueur",
+    "ingredients": ["ミスティア（マスカットリキュール）", "トニックウォーター", "ライム（またはレモン）"],
+    "tags": ["さっぱり", "ほろ苦", "炭酸", "フルーティー"],
+    "note": "トニックのほろ苦さで甘さ控えめに。食事にも合わせやすい。",
+    "image": "images/white.png"
+  },
+
+  {
+    "id": "hypno_soda",
+    "name": "ヒプノソーダ",
+    "category": "Liqueur",
+    "ingredients": ["ヒプノティック", "ソーダ", "レモン（お好み）"],
+    "tags": ["さっぱり", "炭酸", "トロピカル", "飲みやすい"],
+    "note": "ヒプノのトロピカル感をソーダで軽く。暑い日に向く。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "hypno_grapefruit",
+    "name": "ヒプノグレープフルーツ",
+    "category": "Liqueur",
+    "ingredients": ["ヒプノティック", "グレープフルーツジュース"],
+    "tags": ["さっぱり", "柑橘", "フルーティー", "飲みやすい"],
+    "note": "甘さを柑橘の酸味で整える。すっきり系のジュース割り。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "hypno_moni",
+    "name": "ヒプノモーニ",
+    "category": "Liqueur",
+    "ingredients": ["ヒプノティック", "グレープフルーツジュース", "トニックウォーター"],
+    "tags": ["さっぱり", "炭酸", "柑橘", "見た目映え"],
+    "note": "スプモーニ風の爽快ロング。トニックで甘さ控えめに仕上がる。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "hypno_cola",
+    "name": "ヒプノコーラ",
+    "category": "Liqueur",
+    "ingredients": ["ヒプノティック", "コーラ", "レモン（お好み）"],
+    "tags": ["甘口", "炭酸", "カジュアル", "飲みやすい"],
+    "note": "トロピカルな甘さをコーラでラフに。氷多めが合う。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "hypno_ginger",
+    "name": "ヒプノジンジャー",
+    "category": "Liqueur",
+    "ingredients": ["ヒプノティック", "ジンジャーエール", "ライム（お好み）"],
+    "tags": ["甘口", "スパイシー", "炭酸", "爽やか"],
+    "note": "ジンジャーの刺激で甘さが締まる。ライムでさらにキレ。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "hypno_pine",
+    "name": "ヒプノパイン",
+    "category": "Liqueur",
+    "ingredients": ["ヒプノティック", "パイナップルジュース"],
+    "tags": ["トロピカル", "甘口", "フルーティー", "濃厚"],
+    "note": "南国感強めの甘口。デザート感覚で楽しめる。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "blue_mule",
+    "name": "ブルーミュール",
+    "category": "Liqueur",
+    "ingredients": ["ウォッカ", "ブルーキュラソー", "ジンジャーエール（またはジンジャービア）", "ライム"],
+    "tags": ["さっぱり", "スパイシー", "炭酸", "見た目映え"],
+    "note": "モスコミュールを青くアレンジ。ライムの酸味とジンジャーの刺激が主役。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "transformer",
+    "name": "トランスフォーマー",
+    "category": "Liqueur",
+    "ingredients": ["ヒプノティック", "ブルーキュラソー", "レモネード（またはレモンソーダ）"],
+    "tags": ["見た目映え", "甘酸っぱい", "炭酸", "パーティー"],
+    "note": "色がきれいで遊び心のある甘酸っぱいロング。レモン系でまとめると飲みやすい。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "hypno_orange",
+    "name": "ヒプノオレンジ",
+    "category": "Liqueur",
+    "ingredients": ["ヒプノティック", "オレンジジュース"],
+    "tags": ["甘口", "フルーティー", "飲みやすい"],
+    "note": "とにかく飲みやすい甘口。ジュース感覚でいける。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "hino_colada",
+    "name": "ヒノコラーダ",
+    "category": "Liqueur",
+    "ingredients": ["ヒプノティック", "パイナップルジュース", "ココナッツミルク（またはマリブ）"],
+    "tags": ["トロピカル", "濃厚", "甘口", "デザート"],
+    "note": "ピニャコラーダ風の甘濃い南国系。氷を多めにしてゆっくり飲むのが合う。",
+    "image": "images/white.png"
+  },
+
+  {
+    "id": "passoa_cola",
+    "name": "パッソア・コーラ",
+    "category": "Liqueur",
+    "ingredients": ["パッソア（パッションフルーツリキュール）", "コーラ", "ライム（お好み）"],
+    "tags": ["甘口", "炭酸", "トロピカル", "飲みやすい"],
+    "note": "パッションの香りをコーラでカジュアルに。ライムで爽快。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "passoa_orange",
+    "name": "パッソアオレンジ",
+    "category": "Liqueur",
+    "ingredients": ["パッソア（パッションフルーツリキュール）", "オレンジジュース"],
+    "tags": ["甘口", "フルーティー", "トロピカル", "飲みやすい"],
+    "note": "定番のジュース割り。トロピカルで親しみやすい甘さ。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "passoa_moni",
+    "name": "パッソアモーニ",
+    "category": "Liqueur",
+    "ingredients": ["パッソア（パッションフルーツリキュール）", "グレープフルーツジュース", "トニックウォーター"],
+    "tags": ["さっぱり", "柑橘", "炭酸", "トロピカル"],
+    "note": "スプモーニ風にさっぱり仕上がる。甘さと苦味のバランスが良い。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "passoa_ginger",
+    "name": "パッソアジンジャー",
+    "category": "Liqueur",
+    "ingredients": ["パッソア（パッションフルーツリキュール）", "ジンジャーエール", "ライム（お好み）"],
+    "tags": ["甘口", "スパイシー", "炭酸", "爽やか"],
+    "note": "パッションの甘い香りにジンジャーの刺激。ライムでキレが増す。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "passoa_lady_killer",
+    "name": "パッソア・レディキラー",
+    "category": "Liqueur",
+    "ingredients": ["パッソア（パッションフルーツリキュール）", "ジン", "オレンジジュース", "パイナップルジュース", "グレナデンシロップ（少量・お好み）"],
+    "tags": ["甘口", "フルーティー", "トロピカル", "飲みごたえ"],
+    "note": "レディキラー系のトロピカル寄りアレンジ。ジュース感あるのにしっかり酔うタイプ。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "passoa_breeze",
+    "name": "パッソア・ブリーズ",
+    "category": "Liqueur",
+    "ingredients": ["パッソア（パッションフルーツリキュール）", "クランベリージュース", "グレープフルーツジュース"],
+    "tags": ["甘酸っぱい", "フルーティー", "さっぱり", "見た目映え"],
+    "note": "ベイ・ブリーズ系の爽やか甘酸っぱさ。飲みやすくて色もきれい。",
+    "image": "images/white.png"
+  },
+
+  {
+    "id": "gran_blue",
+    "name": "グランブルー",
+    "category": "Liqueur",
+    "ingredients": ["ウォッカ", "パッソア（パッションフルーツリキュール）", "グレープフルーツジュース", "ブルーキュラソー"],
+    "tags": ["見た目映え", "甘酸っぱい", "トロピカル", "柑橘"],
+    "note": "パッション×グレープフルーツを青く仕上げる一杯。甘酸っぱくて爽快、グラデーションもきれい。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "pink_passion",
+    "name": "ピンクパッション",
+    "category": "Liqueur",
+    "ingredients": ["ウォッカ", "パッソア（パッションフルーツリキュール）", "スプライト（またはレモンソーダ）", "ライム"],
+    "tags": ["甘口", "炭酸", "トロピカル", "飲みやすい"],
+    "note": "パッソアの“パッソアカラー”が映える甘口ソーダ割り。ライムで爽快感アップ。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "passoa_tonic",
+    "name": "パッソア・トニック",
+    "category": "Liqueur",
+    "ingredients": ["パッソア（パッションフルーツリキュール）", "トニックウォーター", "ライム（お好み）"],
+    "tags": ["さっぱり", "ほろ苦", "炭酸", "トロピカル"],
+    "note": "トニックの苦味で甘さ控えめに。食中でもいけるパッション系。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "summer_dream",
+    "name": "サマードリーム",
+    "category": "Liqueur",
+    "ingredients": ["パッソア（パッションフルーツリキュール）", "オレンジジュース", "グレープフルーツジュース"],
+    "tags": ["さっぱり", "フルーティー", "トロピカル", "飲みやすい"],
+    "note": "南国感はありつつ、柑橘で軽めにまとまるロング。昼飲みにも。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "passion_driver",
+    "name": "パッションドライバー",
+    "category": "Liqueur",
+    "ingredients": ["ボルス パッションフルーツ（またはパッソア）", "グレープフルーツジュース"],
+    "tags": ["さっぱり", "柑橘", "トロピカル", "飲みやすい"],
+    "note": "“パッション版ソルティドッグ/ドライバー”系。甘さと酸味のバランスが良い。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "passoa_pine",
+    "name": "パッソア・パイン",
+    "category": "Liqueur",
+    "ingredients": ["パッソア（パッションフルーツリキュール）", "パイナップルジュース"],
+    "tags": ["トロピカル", "甘口", "フルーティー", "濃厚"],
+    "note": "パッション×パインの南国コンボ。甘めでデザート感あり。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "augusta_seven",
+    "name": "オーガスタセブン",
+    "category": "Liqueur",
+    "ingredients": ["パッソア（パッションフルーツリキュール）", "レモンジュース", "パイナップルジュース"],
+    "tags": ["トロピカル", "甘酸っぱい", "フルーティー", "爽やか"],
+    "note": "パッションの香りにレモンのキレ、パインの甘さ。トロピカルだけど飲み口は軽快。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "amys_risky_passion",
+    "name": "アミーズ・リスキー・パッション",
+    "category": "Liqueur",
+    "ingredients": ["ウォッカ", "パッソア（パッションフルーツリキュール）", "オレンジジュース", "パイナップルジュース"],
+    "tags": ["トロピカル", "甘口", "フルーティー", "飲みごたえ"],
+    "note": "ジュース感覚で飲めるのに、ウォッカでしっかり。甘くて危険なタイプ。",
+    "image": "images/white.png"
+  },
+
+  {
+    "id": "kahlua_soda",
+    "name": "カルーア・ソーダ",
+    "category": "Liqueur",
+    "ingredients": ["カルーア（コーヒーリキュール）", "ソーダ", "ライム（お好み）"],
+    "tags": ["さっぱり", "炭酸", "コーヒー香", "軽い"],
+    "note": "コーヒーの甘さをソーダで軽く。ライムを入れると意外と爽快。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "kahlua_twist",
+    "name": "カルーア・ツイスト",
+    "category": "Liqueur",
+    "ingredients": ["カルーア（コーヒーリキュール）", "コーラ（ペプシツイスト等レモン風味だと相性◎）", "レモン"],
+    "tags": ["甘口", "炭酸", "コーヒー香", "カジュアル"],
+    "note": "カルーア×コーラの定番アレンジ。レモンでキレを足すと飲みやすい。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "kahlua_tonic",
+    "name": "カルーア・トニック",
+    "category": "Liqueur",
+    "ingredients": ["カルーア（コーヒーリキュール）", "トニックウォーター", "ライム（お好み）"],
+    "tags": ["さっぱり", "ほろ苦", "炭酸", "意外性"],
+    "note": "コーヒー×トニックの“意外と合う”組み合わせ。甘さ控えめにできる。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "mexico_punch",
+    "name": "メヒコ・パンチ",
+    "category": "Liqueur",
+    "ingredients": ["カルーア（コーヒーリキュール）", "レモンジュース", "ジンジャーエール（またはジンジャービア）"],
+    "tags": ["さっぱり", "スパイシー", "炭酸", "意外性"],
+    "note": "別名「カルーア・ジンジャーレモン」。甘いカルーアがレモンとジンジャーで一気に爽快に。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "kahlua_oolong",
+    "name": "カルーア・ウーロン",
+    "category": "Liqueur",
+    "ingredients": ["カルーア（コーヒーリキュール）", "ウーロン茶"],
+    "tags": ["お茶", "甘さ控えめ", "コーヒー香", "食中酒"],
+    "note": "甘さが重くなりにくいお茶割り。食事にも合わせやすい。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "kahlua_pine",
+    "name": "カルーア・パイン",
+    "category": "Liqueur",
+    "ingredients": ["カルーア（コーヒーリキュール）", "パイナップルジュース"],
+    "tags": ["トロピカル", "甘口", "コーヒー香", "濃厚"],
+    "note": "コーヒー×パインの変化球。甘めでデザート寄り、意外性が楽しい。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "black_russian",
+    "name": "ブラックルシアン",
+    "category": "Vodka",
+    "ingredients": ["ウォッカ", "カルーア（コーヒーリキュール）"],
+    "tags": ["濃いめ", "甘口", "コーヒー香", "食後向き"],
+    "note": "ウォッカとコーヒーリキュールのシンプルな定番。ロックでゆっくり。",
+    "image": "images/white.png"
+  },
+
+  {
+    "id": "midori_cola",
+    "name": "ミドリコーラ",
+    "category": "Liqueur",
+    "ingredients": ["ミドリ（メロンリキュール）", "コーラ", "レモン（お好み）"],
+    "tags": ["甘口", "炭酸", "メロン", "カジュアル"],
+    "note": "メロンの甘い香りをコーラでポップに。氷多めで飲みやすい。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "midori_spu_moni",
+    "name": "ミドリスプモーニ",
+    "category": "Liqueur",
+    "ingredients": ["ミドリ（メロンリキュール）", "グレープフルーツジュース", "トニックウォーター"],
+    "tags": ["さっぱり", "ほろ苦", "炭酸", "フルーティー"],
+    "note": "カンパリの代わりにミドリで作るスプモーニ風。甘さと苦味のバランスが良い。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "midori_soda",
+    "name": "ミドリソーダ",
+    "category": "Liqueur",
+    "ingredients": ["ミドリ（メロンリキュール）", "ソーダ", "レモン（お好み）"],
+    "tags": ["さっぱり", "炭酸", "メロン", "軽い"],
+    "note": "メロンの香りをソーダで軽く。暑い日に飲みやすい定番。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "midori_sprite",
+    "name": "ミドリスプライト",
+    "category": "Liqueur",
+    "ingredients": ["ミドリ（メロンリキュール）", "スプライト（またはレモンソーダ）", "レモン（お好み）"],
+    "tags": ["甘口", "炭酸", "爽やか", "飲みやすい"],
+    "note": "レモン系ソーダで甘さが程よく軽くなる。初心者にもおすすめ。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "midori_tonic",
+    "name": "ミドリトニック",
+    "category": "Liqueur",
+    "ingredients": ["ミドリ（メロンリキュール）", "トニックウォーター", "ライム（お好み）"],
+    "tags": ["さっぱり", "ほろ苦", "炭酸", "メロン"],
+    "note": "トニックの苦味で甘さ控えめに。ライムを足すとさらに爽快。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "melon_ball",
+    "name": "メロンボール",
+    "category": "Liqueur",
+    "ingredients": ["ウォッカ", "ミドリ（メロンリキュール）", "オレンジジュース"],
+    "tags": ["甘口", "フルーティー", "メロン", "飲みやすい"],
+    "note": "ミドリの代表的カクテル。オレンジで飲みやすく、色もきれい。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "green_calpis",
+    "name": "グリーンカルピス",
+    "category": "Liqueur",
+    "ingredients": ["ミドリ（メロンリキュール）", "カルピス", "ソーダ（お好み）"],
+    "tags": ["甘口", "まろやか", "デザート", "見た目映え"],
+    "note": "メロン×乳酸でまろやか甘口。ソーダを足すと軽くなる。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "midori_ginger",
+    "name": "ミドリジンジャー",
+    "category": "Liqueur",
+    "ingredients": ["ミドリ（メロンリキュール）", "ジンジャーエール", "ライム（お好み）"],
+    "tags": ["甘口", "スパイシー", "炭酸", "爽やか"],
+    "note": "メロンの甘さをジンジャーの刺激で引き締める。ライムでキレ増し。",
+    "image": "images/white.png"
+  },
+
+  {
+    "id": "gin_tonic",
+    "name": "ジントニック",
+    "category": "Gin",
+    "ingredients": ["ジン", "トニックウォーター", "ライム（またはレモン）"],
+    "tags": ["さっぱり", "ほろ苦", "炭酸", "定番"],
+    "note": "ジンのボタニカルとトニックの苦味が爽快。ライムでキレが増す。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "gin_soda",
+    "name": "ジンソーダ",
+    "category": "Gin",
+    "ingredients": ["ジン", "ソーダ", "レモン（お好み）"],
+    "tags": ["さっぱり", "炭酸", "軽い", "食中酒"],
+    "note": "ジンをシンプルに楽しめるソーダ割り。レモンでさらに爽快。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "gin_buck",
+    "name": "ジン・バック",
+    "category": "Gin",
+    "ingredients": ["ジン", "ジンジャーエール", "レモン（またはライム）"],
+    "tags": ["さっぱり", "スパイシー", "炭酸", "飲みやすい"],
+    "note": "ジンジャーの刺激でキリッと。柑橘を搾ると後味が締まる。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "gin_coke",
+    "name": "ジンコーク",
+    "category": "Gin",
+    "ingredients": ["ジン", "コーラ", "レモン（お好み）"],
+    "tags": ["甘口", "炭酸", "カジュアル", "飲みやすい"],
+    "note": "ボタニカル感にコーラのスパイスが合う。甘めでカジュアル。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "ninja_turtle",
+    "name": "ニンジャタートル",
+    "category": "Gin",
+    "ingredients": ["ジン", "ミドリ（メロンリキュール）", "グレープフルーツジュース", "トニックウォーター"],
+    "tags": ["見た目映え", "さっぱり", "炭酸", "フルーティー"],
+    "note": "グリーン系で映える爽快ロング。メロンの甘さを柑橘とトニックで整える。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "orange_blossom",
+    "name": "オレンジブロッサム",
+    "category": "Gin",
+    "ingredients": ["ジン", "オレンジジュース"],
+    "tags": ["甘口", "フルーティー", "定番", "飲みやすい"],
+    "note": "ジン×オレンジのシンプル定番。ジュース感覚で飲みやすい。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "gin_oolong",
+    "name": "ジンウーロン",
+    "category": "Gin",
+    "ingredients": ["ジン", "ウーロン茶", "レモン（お好み）"],
+    "tags": ["さっぱり", "お茶", "甘さ控えめ", "食中酒"],
+    "note": "甘くないお茶割り。ジンの香りがふわっと残って飲み飽きにくい。",
+    "image": "images/white.png"
+  },
+
+  {
+    "id": "vodka_tonic",
+    "name": "ウォッカトニック",
+    "category": "Vodka",
+    "ingredients": ["ウォッカ", "トニックウォーター", "ライム（またはレモン）"],
+    "tags": ["さっぱり", "ほろ苦", "炭酸", "定番"],
+    "note": "クセが少なく合わせやすい定番。ライムでさらに爽快。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "russian_coke",
+    "name": "ルシアンコーク",
+    "category": "Vodka",
+    "ingredients": ["ウォッカ", "カルーア（コーヒーリキュール）", "コーラ"],
+    "tags": ["甘口", "炭酸", "コーヒー香", "飲みやすい"],
+    "note": "ブラックルシアンをコーラで割るイメージ。甘くて飲みやすいが進みやすい。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "salt_lick",
+    "name": "ソルト・リック",
+    "category": "Vodka",
+    "ingredients": ["ウォッカ", "グレープフルーツジュース", "塩（ひとつまみ）"],
+    "tags": ["さっぱり", "柑橘", "塩味", "飲みやすい"],
+    "note": "ソルティドッグの“塩を中に入れる”タイプ。塩で甘酸っぱさが立つ。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "bulldog",
+    "name": "ブルドッグ",
+    "category": "Vodka",
+    "ingredients": ["ウォッカ", "グレープフルーツジュース"],
+    "tags": ["さっぱり", "柑橘", "定番", "飲みやすい"],
+    "note": "ウォッカ×グレープフルーツの定番ロング。すっきり系。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "screwdriver",
+    "name": "スクリュードライバー",
+    "category": "Vodka",
+    "ingredients": ["ウォッカ", "オレンジジュース"],
+    "tags": ["甘口", "フルーティー", "定番", "飲みやすい"],
+    "note": "ウォッカの定番カクテル。シンプルで作りやすい。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "pink_passion_2",
+    "name": "ピンクパッション",
+    "category": "Vodka",
+    "ingredients": ["ウォッカ", "パッソア（パッションフルーツリキュール）", "スプライト（またはレモンソーダ）", "ライム"],
+    "tags": ["甘口", "炭酸", "トロピカル", "飲みやすい"],
+    "note": "（Vodkaカテゴリ版）パッソアの甘酸っぱさをレモンソーダで軽く。色もきれい。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "moscow_mule",
+    "name": "モスコミュール",
+    "category": "Vodka",
+    "ingredients": ["ウォッカ", "ジンジャーエール（またはジンジャービア）", "ライム"],
+    "tags": ["さっぱり", "スパイシー", "炭酸", "定番"],
+    "note": "ライムの酸味とジンジャーの刺激で爽快。銅マグ風にすると雰囲気◎。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "redbull_vodka",
+    "name": "レッドブルウォッカ",
+    "category": "Vodka",
+    "ingredients": ["ウォッカ", "レッドブル（エナジードリンク）", "ライム（お好み）"],
+    "tags": ["甘口", "炭酸", "強め", "パーティー"],
+    "note": "エナジー感のある甘口ロング。飲みやすい分、ペース注意。",
+    "image": "images/white.png"
+  },
+
+  {
+    "id": "sol_cubano",
+    "name": "ソル・クバーノ",
+    "category": "Rum",
+    "ingredients": ["ラム", "グレープフルーツジュース", "トニックウォーター", "ライム（お好み）"],
+    "tags": ["さっぱり", "柑橘", "炭酸", "爽やか"],
+    "note": "ラムを柑橘とトニックで爽快に仕上げるロング。甘さ控えめで飲みやすい。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "rum_coke",
+    "name": "ラムコーク",
+    "category": "Rum",
+    "ingredients": ["ラム", "コーラ", "ライム（お好み）"],
+    "tags": ["甘口", "炭酸", "定番", "カジュアル"],
+    "note": "キューバ・リブレのシンプル版。ライムを搾ると一気に本格的に。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "rum_buck",
+    "name": "ラム・バック",
+    "category": "Rum",
+    "ingredients": ["ラム", "ジンジャーエール", "ライム（またはレモン）"],
+    "tags": ["さっぱり", "スパイシー", "炭酸", "飲みやすい"],
+    "note": "ラムをジンジャーで割る爽快ロング。柑橘でキレが出る。",
+    "image": "images/white.png"
+  },
+  {
+    "id": "cuba_screw",
+    "name": "キューバスクリュー",
+    "category": "Rum",
+    "ingredients": ["ラム", "オレンジジュース"],
+    "tags": ["甘口", "フルーティー", "飲みやすい"],
+    "note": "スクリュードライバーのラム版。オレンジで飲みやすく、ラムの甘い香りが出る。",
+    "image": "images/white.png"
   }
 ]

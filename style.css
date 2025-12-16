@@ -11,19 +11,32 @@ body{
   margin:0;
   background:var(--bg);
   color:var(--text);
-  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", "MS Mincho", serif;
 }
 
-body:before{
+body::before,
+body::after{
   content:"";
   position: fixed;
-  inset: 14px;
-  border: 1px solid var(--line);
-  pointer-events:none;
+  top: 14px;
+  bottom: 14px;
+  width: 1px;
+  background: var(--line); /* オレンジ/金 */
   opacity: .85;
+  pointer-events: none;
+  z-index: 9999;
 }
 
-.wrap{ max-width: 1000px; margin:0 auto; padding:16px; }
+body::before{ left: 14px; }
+body::after { right: 14px; }
+
+.wrap{ padding: 16px 40px; }
+
+@media (max-width: 480px){
+  .wrap{ padding: 14px 28px; }
+}
+
+
 
 h1{
   margin: 8px 0 16px;
