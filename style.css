@@ -85,6 +85,7 @@ h1{
 
 /* タブレットくらい */
 @media (max-width: 900px){
+    .grid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .card h2{ font-size: 16px; }
   .card .meta{ font-size: 12px; }
   .tag{ font-size: 11px; }
@@ -93,6 +94,7 @@ h1{
 /* スマホくらい */
 @media (max-width: 560px){
   .grid{grid-template-columns: repeat(2,minmax(0,1fr));}
+  .wrap{ padding: 14px 20px;}
   .card h2{ font-size: 15px; }
   .card .meta{ font-size: 12px; }
   .tag{ font-size: 11px; }
@@ -121,11 +123,4 @@ h1{
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
-@media (max-width: 900px){
-  .grid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
-}
-
-@media (max-width: 560px){
-  .grid{ grid-template-columns: 1fr; }
-}
 
