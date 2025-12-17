@@ -1,4 +1,14 @@
 [
+     {
+    "id": "can",
+    "name": "お好み缶酎ハイ",
+    "category": "Rum",
+    "ingredients": ["スピリッツ"],
+    "taste": ["さっぱり"],
+    "mood": ["柑橘", "炭酸"],
+    "note": "店長の時間がないときはコレです。すみません。",
+    "image": "images/can.png"
+  },
   {
     "id": "mojito",
     "name": "モヒート",
