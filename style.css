@@ -1,3 +1,6 @@
+/* =========================
+   1) Theme (colors, fonts)
+========================= */
 :root{
   --bg:#070707;
   --panel:#0c0c0c;
@@ -5,6 +8,9 @@
   --muted:#c9c9c9;
   --line:#e0a21a;   /* オレンジ/金 */
   --line2:#2a2a2a;  /* うすい境界 */
+
+  --wrap-x: 40px;   /* PC時の左右余白 */
+  --wrap-y: 16px;
 }
 
 body, button, input, select, textarea{
@@ -14,6 +20,21 @@ body, button, input, select, textarea{
   font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", "MS Mincho", serif;
 }
 
+/* =========================
+   2) Layout helpers
+========================= */
+.wrap{
+  padding: var(--wrap-y) var(--wrap-x);
+}
+
+h1{
+  margin: 8px 0 16px;
+  letter-spacing: .06em;
+}
+
+/* =========================
+   3) Side lines (decoration)
+========================= */
 body::before,
 body::after{
   content:"";
@@ -21,30 +42,19 @@ body::after{
   top: 14px;
   bottom: 14px;
   width: 1px;
-  background: var(--line); /* オレンジ/金 */
+  background: var(--line);
   opacity: .85;
   pointer-events: none;
   z-index: 9999;
 }
-
 body::before{ left: 14px; }
 body::after { right: 14px; }
 
-.wrap{ padding: 16px 40px; }
-
-@media (max-width: 480px){
-  .wrap{ padding: 14px 28px; }
-}
-
-
-
-h1{
-  margin: 8px 0 16px;
-  letter-spacing: .06em;
-}
-
-/* 入力UIも黒基調 */
-.controls input, .controls select{
+/* =========================
+   4) Controls (search/select/button)
+========================= */
+.controls input,
+.controls select{
   background: var(--panel);
   color: var(--text);
   border: 1px solid var(--line2);
@@ -56,7 +66,9 @@ h1{
   border: 1px solid var(--line);
 }
 
-/* タグチップ */
+/* =========================
+   5) Chips (filter buttons)
+========================= */
 .chip{
   background: transparent;
   color: var(--text);
@@ -64,57 +76,103 @@ h1{
   font-size: 14px;
   letter-spacing: .04em;
 }
+
 .chip.active{
   background: var(--line);
   color: #111;
   border-color: var(--line);
 }
 
-/* カード */
-.card{
-  background: var(--panel);
-  border: 1px solid var(--line2);
-  border-radius: 16px;
-}
-.card h2{ color: var(--text); }
-.meta{ color: var(--muted); }
-/* 基本サイズ（PC） */
-.card h2{ font-size: 18px; line-height: 1.25; }
-.card .meta{ font-size: 13px; line-height: 1.35; }
-.tag{ font-size: 12px; }
-
+/* =========================
+   6) Grid (cards container)
+========================= */
 .grid{
   display: grid;
   gap: 12px;
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
-/* スマホくらい */
-@media (max-width: 560px){
-  .grid{grid-template-columns: repeat(2,minmax(0,1fr));}
-  .wrap{ padding: 14px 20px;}
-  .card h2{ font-size: 15px; }
-  .card .meta{ font-size: 12px; }
-  .tag{ font-size: 11px; }
-}
-
-
-.tag{
-  color: var(--text);
+/* =========================
+   7) Card
+========================= */
+.card{
+  background: var(--panel);
   border: 1px solid var(--line2);
+  border-radius: 16px;
+  overflow: hidden; /* 角丸からのはみ出し防止 */
 }
 
-/* 画像枠（黒背景に馴染ませる） */
+.card .pad{
+  padding: 12px;
+}
+
+.card h2{
+  color: var(--text);
+  font-size: 18px;
+  line-height: 1.25;
+  margin: 0 0 6px;
+}
+
+.card .meta{
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+/* image: 外周の白枠を見せない用に少し内側を表示 */
 .card img{
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: contain;
   background: #000;
-  border-bottom: 1px solid var(--line2);
   display: block;
+  clip-path: inset(2% 2% 2% 2%); /* 上 右 下 左 */
+  border-bottom: 1px solid var(--line2);
 }
 
+/* =========================
+   8) Tags (inside card)
+========================= */
+.tags{
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
 
+.tag{
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 8px;
+  border-radius: 999px;
+  line-height: 1;
+  box-sizing: border-box;
 
+  color: var(--text);
+  border: 1px solid var(--line2);
+  font-size: 12px;
+}
 
+/* =========================
+   9) Responsive
+========================= */
+@media (max-width: 560px){
+  :root{
+    --wrap-x: 20px;
+    --wrap-y: 14px;
+  }
 
+  .grid{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .card h2{ font-size: 15px; }
+  .card .meta{ font-size: 12px; }
+  .tag{ font-size: 11px; }
+}
+
+@media (max-width: 480px){
+  :root{
+    --wrap-x: 28px;
+  }
+}
