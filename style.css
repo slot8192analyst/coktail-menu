@@ -92,6 +92,7 @@ h1{
 
 /* スマホくらい */
 @media (max-width: 560px){
+  .grid{grid-template-columns: repeat(2,minmax(0,1fr));}
   .card h2{ font-size: 15px; }
   .card .meta{ font-size: 12px; }
   .tag{ font-size: 11px; }
