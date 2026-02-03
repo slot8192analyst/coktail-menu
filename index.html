@@ -9,23 +9,18 @@
 <body>
   <header class="wrap">
     <h1>MENU</h1>
-
-    <div class="controls">
-      <input id="q" type="search" placeholder="味/材料/名前で検索（例：さっぱり、柑橘）" />
-      <select id="category">
-        <option value="">全カテゴリ</option>
-      </select>
-      <button id="clear">クリア</button>
-    </div>
-
-    <div id="tagChips" class="chips"></div>
+    <p class="subtitle">本日のおすすめ</p>
   </header>
 
   <main class="wrap">
-    <div id="count" class="count"></div>
-    <div id="grid" class="grid"></div>
+    <div id="grid" class="grid recommend-grid"></div>
+
+    <div class="actions">
+      <button id="shuffle" class="btn-secondary">別のおすすめを見る</button>
+      <a href="menu.html" class="btn-primary">メニュー一覧を見る</a>
+    </div>
   </main>
 
-  <script src="app.js"></script>
+  <script src="recommend.js"></script>
 </body>
 </html>

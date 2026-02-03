@@ -176,3 +176,70 @@ body::after { right: 14px; }
     --wrap-x: 28px;
   }
 }
+
+/* =========================
+   10) Top page additions
+========================= */
+.subtitle {
+  color: var(--muted);
+  font-size: 14px;
+  margin: -8px 0 0;
+  letter-spacing: .08em;
+}
+
+.recommend-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.actions {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 15px;
+  text-decoration: none;
+  cursor: pointer;
+  letter-spacing: .04em;
+  transition: opacity .2s;
+}
+
+.btn-primary {
+  background: var(--line);
+  color: #111;
+  border: none;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--line);
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+  opacity: .8;
+}
+
+@media (max-width: 560px) {
+  .recommend-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    text-align: center;
+  }
+}
